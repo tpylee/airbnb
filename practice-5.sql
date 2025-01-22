@@ -11,5 +11,8 @@
 -- | Private room in residential home    | 12       |
 -- | Private room in townhouse           | 3        |
 -- +-------------------------------------+----------+
-
+SELECT property_type, count(*)
+FROM listings
+where neighborhood="Hyde Park"
+Group by property_type;
 
